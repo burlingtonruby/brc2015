@@ -1,0 +1,14 @@
+<h2>Speakers</h2>
+
+<ul>
+  {{#each model as |speaker|}}
+    {{#link-to 'speakers.speaker' speaker}}
+      <li>
+        <img {{bind-attr src=speaker.imageUrl}}>
+        <h5>{{speaker.name}}</h5>
+      </li>
+    {{/link-to}}
+  {{/each}}
+</ul>
+
+{{outlet}}
