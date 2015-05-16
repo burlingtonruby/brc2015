@@ -1,3 +1,5 @@
+$dark: #222;
+
 .brc-mark-large {
   margin-top: 20px;
   width: 160px;
@@ -21,6 +23,18 @@
   .hero-info {
     margin: 60px auto;
     max-width: 660px;
+  }
+}
+
+.header {
+  a {
+    color: $dark;
+    text-decoration: none;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: lighten($dark, 30%);
+    }
   }
 }
 
@@ -64,4 +78,3 @@
   max-width: 320px;
   width: 80%;
 }
-
