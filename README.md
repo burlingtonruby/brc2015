@@ -42,6 +42,16 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Deploying
 
 Specify what it takes to deploy your app.
+The app is hosted on [Divshot](https://divshot.com/) and uses
+[ember-cli-divshot](https://github.com/rwjblue/ember-cli-divshot).
+Release new versions by running:
+
+``` sh
+ember divshot push ENVIRONMENT
+```
+
+For example: `ember divshot push production` pushes to the production
+environment. Specifying no environment uses development.
 
 ## Further Reading / Useful Links
 
@@ -50,4 +60,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-

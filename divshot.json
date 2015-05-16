@@ -1,0 +1,9 @@
+{
+  "name": "brc2015",
+  "root": "./dist",
+  "routes": {
+    "/tests": "tests/index.html",
+    "/tests/**": "tests/index.html",
+    "/**": "index.html"
+  }
+}
