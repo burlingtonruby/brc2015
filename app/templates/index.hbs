@@ -32,70 +32,15 @@
     <div id='speakers'>
       <h2>Speakers</h2>
 
-      <div class='speaker'>
-        <img src='/images/aaron-kalin.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Aaron Kalin (<a href='https://twitter.com/martinisoft'>@martinisoft</a>)</h5>
-      </div>
+      {{#each speakers as |speaker|}}
+        {{#link-to 'speakers.speaker' speaker}}
+          <div class='speaker'>
+            <img {{bind-attr src=speaker.imageUrl}} class='speaker-image'>
+            <h5 class='speaker-title'>{{speaker.name}}</h5>
+          </div>
+        {{/link-to}}
+      {{/each}}
 
-      <div class='speaker'>
-        <img src='/images/aaron-quint.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Aaron Quint (<a href='https://twitter.com/aq'>@aq</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/eileen-m-uchitelle.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Eileen M. Uchitelle (<a href='https://twitter.com/eileencodes'>@eileencodes</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/hiro-asari.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Hiro Asari (<a href='https://twitter.com/hiro_asari'>@hiro_asari</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/mark-bates.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Mark Bates (<a href='https://twitter.com/markbates'>@markbates</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/mark-sobkowicz.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Mark Sobkowicz (<a href='https://twitter.com/marksobkowicz'>@marksobkowicz</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/michael-denomy.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Michael Denomy (<a href='https://twitter.com/mdenomy'>@mdenomy</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/sam-phippen.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Sam Phippen (<a href='https://twitter.com/samphippen'>@samphippen</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/sara-simon.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Sara Simon (<a href='https://twitter.com/sarambsimon'>@sarambsimon</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/sharon-steed.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Sharon Steed (<a href='https://twitter.com/sharonsteed'>@sharonsteed</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/stephanie-morillo.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Stephanie Morillo (<a href='https://twitter.com/radiomorillo'>@radiomorillo</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/tim-krajcar.jpg' class='speaker-image'>
-        <h5 class='speaker-title'>Tim Krajcar (<a href='https://twitter.com/timkrajcar'>@timkrajcar</a>)</h5>
-      </div>
-
-      <div class='speaker'>
-        <img src='/images/zachary-scott.png' class='speaker-image'>
-        <h5 class='speaker-title'>Zachary Scott (<a href='https://twitter.com/_zzak'>@_zzak</a>)</h5>
-      </div>
     </div>
 
     <hr>
