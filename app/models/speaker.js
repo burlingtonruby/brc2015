@@ -1,4 +1,7 @@
+import Ember from 'ember';
 import DS from 'ember-data';
+
+const SafeString = Ember.Handlebars.SafeString;
 
 var Speaker = DS.Model.extend({
   bio: DS.attr('string'),
@@ -11,7 +14,7 @@ var Speaker = DS.Model.extend({
   website: DS.attr('string'),
 
   imageUrl: function() {
-    return 'images/speakers/'+this.get('imagePath');
+    return new SafeString('https://s3.amazonaws.com/burlingtonrubyconference/2015/speakers/'+this.get('imagePath'));
   }.property('imagePath')
 });
 
