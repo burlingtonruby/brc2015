@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: row;
+  flex-flow: row wrap;
   text-align: left;
   width: 100%;
 
@@ -17,6 +18,10 @@
   .nav {
     flex: 2 60%;
 
+    @media ($small) {
+      flex: 2 100%;
+    }
+
     ul {
       margin-top: 26px;
       display: flex;
@@ -32,6 +37,11 @@
 
   .title {
     flex: 1 40%;
+
+    @media ($small) {
+      flex: 1 100%;
+    }
+
     font-size: 18px;
     margin-top: 20px;
     margin-bottom: 30px;
