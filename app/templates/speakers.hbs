@@ -1,0 +1,18 @@
+<div class='speakers'>
+  <h1 class='title'>Speakers</h1>
+
+  <div class='speakers-list'>
+    {{#each model as |speaker|}}
+      {{#link-to 'speakers.speaker' speaker}}
+        <div class='speaker'>
+          <img {{bind-attr src=speaker.imageUrl}} class='speaker-image'>
+          <h5 class='speaker-title'>{{speaker.name}}</h5>
+        </div>
+      {{/link-to}}
+    {{/each}}
+  </div>
+
+  <div class='speakers-speaker-content'>
+    {{outlet}}
+  </div>
+</div>
