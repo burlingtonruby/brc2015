@@ -1,7 +1,28 @@
 <div class='header'>
-  {{#link-to 'index'}}
-    <img src='/images/brc-2015-mark.svg' class='brc-mark-large'>
+  <div class='title'>
+    {{#link-to 'index'}}
+      <img src='/images/brc-2015-mark.svg' class='brc-mark-large'>
+      <span>Burlington Ruby Conference 2015</span>
+    {{/link-to}}
+  </div>
 
-    <h1 class='title'>Burlington Ruby Conference 2015</h1>
-  {{/link-to}}
+  <div class='nav'>
+    <ul>
+      <li>
+        {{#link-to 'index'}}Home{{/link-to}}
+      </li>
+
+      <li>
+        {{#link-to 'speakers'}}Speakers{{/link-to}}
+      </li>
+
+      <li>
+        <a href='/#sponsors'>Sponsors</a>
+      </li>
+
+      <li>
+        {{#link-to 'conduct'}}Code of Conduct{{/link-to}}
+      </li>
+    </ul>
+  </div>
 </div>
