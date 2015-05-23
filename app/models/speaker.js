@@ -11,7 +11,7 @@ var Speaker = DS.Model.extend({
   website: DS.attr('string'),
 
   imageUrl: function() {
-    return 'images/'+this.get('imagePath');
+    return 'images/speakers/'+this.get('imagePath');
   }.property('imagePath')
 });
 
@@ -53,14 +53,14 @@ Speaker.reopenClass({
     },
     {
       id: 4,
-      bio: "Over my career I have worked in a variety of roles: developer,  manager, agile coach, director, and then full circle back to developer.  \n\nMany years ago, I was turned by the ways of agile and extreme programming. That started a journey of constantly trying to understand better ways to develop software.  In addition to learning about technical topics, I am very interested in the \"softer\" topics that help us work effectively as teams.",
-      company: 'Autodesk',
-      imagePath: 'michael-denomy.jpg',
-      name: 'Michael Denomy',
-      talkDescription: "Companies make significant efforts and investments to keep employees happy: free lunches, financial incentives, company outings, and training budgets just to name a few. That's all well and good, but what can we do to take ownership of our own happiness?",
-      talkTitle: 'Breathe In and Out With Me - Owning Your Happiness',
-      twitterHandle: 'mdenomy',
-      website: 'https://mdenomy.wordpress.com/'
+      bio: "Hi, I am Sara. I'm an art school grad and English major turned software developer. By no means a far leap in my book. I code the news at Vermont Public Radio, and I like to think about how to build software that will do creative things.",
+      company: 'Vermont Public Radio',
+      imagePath: 'sara-simon.jpg',
+      name: 'Sara Simon',
+      talkDescription: "As Ruby devs, we tend to be strict in our devotion to the “just get your hands dirty and play around with the code” learning style. It’s what I like to think of as natural context learning. It’s being thrown in the deep end and forced to swim to shore. It’s hands-on. It’s incredibly valuable. It works, but it works faster and better if it’s not a stand-alone method. This is a talk about the other methods. It's a talk about the tricks I used to become nearly fluent in Mandarin Chinese, and about how I applied those same tricks to learning Ruby. In a nutshell, it's about the foreignness of programming languages and about the ways we can program our brains to learn a foreign one. I’ve found intrinsic similarities between foreign and programming languages, and with each, I’ve found a simple and straightforward path to fluency.",
+      talkTitle: 'Learning Fluency',
+      twitterHandle: 'sarambsimon',
+      website: 'http://www.sarambsimon.co'
     },
     {
       id: 5,
@@ -130,14 +130,14 @@ Speaker.reopenClass({
     },
     {
       id: 11,
-      bio: "Hi, I am Sara. I'm an art school grad and English major turned software developer. By no means a far leap in my book. I code the news at Vermont Public Radio, and I like to think about how to build software that will do creative things.",
-      company: 'Vermont Public Radio',
-      imagePath: 'sara-simon.jpg',
-      name: 'Sara Simon',
-      talkDescription: "As Ruby devs, we tend to be strict in our devotion to the “just get your hands dirty and play around with the code” learning style. It’s what I like to think of as natural context learning. It’s being thrown in the deep end and forced to swim to shore. It’s hands-on. It’s incredibly valuable. It works, but it works faster and better if it’s not a stand-alone method. This is a talk about the other methods. It's a talk about the tricks I used to become nearly fluent in Mandarin Chinese, and about how I applied those same tricks to learning Ruby. In a nutshell, it's about the foreignness of programming languages and about the ways we can program our brains to learn a foreign one. I’ve found intrinsic similarities between foreign and programming languages, and with each, I’ve found a simple and straightforward path to fluency.",
-      talkTitle: 'Learning Fluency',
-      twitterHandle: 'sarambsimon',
-      website: 'http://www.sarambsimon.co'
+      bio: "Over my career I have worked in a variety of roles: developer,  manager, agile coach, director, and then full circle back to developer.  \n\nMany years ago, I was turned by the ways of agile and extreme programming. That started a journey of constantly trying to understand better ways to develop software.  In addition to learning about technical topics, I am very interested in the \"softer\" topics that help us work effectively as teams.",
+      company: 'Autodesk',
+      imagePath: 'michael-denomy.jpg',
+      name: 'Michael Denomy',
+      talkDescription: "Companies make significant efforts and investments to keep employees happy: free lunches, financial incentives, company outings, and training budgets just to name a few. That's all well and good, but what can we do to take ownership of our own happiness?",
+      talkTitle: 'Breathe In and Out With Me - Owning Your Happiness',
+      twitterHandle: 'mdenomy',
+      website: 'https://mdenomy.wordpress.com/'
     },
     {
       id: 12,
