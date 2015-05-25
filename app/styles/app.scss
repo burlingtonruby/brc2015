@@ -18,3 +18,8 @@ body {
 .hero, .footer {
   text-align: center;
 }
+
+.constrained-content {
+  margin: 0 auto;
+  max-width: 660px;
+}
