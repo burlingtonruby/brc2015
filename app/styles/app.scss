@@ -40,7 +40,7 @@ body {
     vertical-align: top;
     width: 32%;
 
-    @media ($small) {
+    @media #{$small} {
       width: 49%;
     }
 
@@ -49,7 +49,7 @@ body {
       border-radius: 1000px;
       width: 140px;
 
-      @media ($small) {
+      @media #{$small} {
         width: 100px;
       }
     }
