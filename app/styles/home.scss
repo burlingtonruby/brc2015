@@ -1,0 +1,47 @@
+.hero {
+  .hero-info {
+    margin: 30px auto;
+    max-width: 660px;
+  }
+}
+
+.sponsor-prospect {
+  font-size: 12px;
+  padding-top: 24px;
+}
+
+#speakers {
+  margin: 20px 0;
+
+  .speaker {
+    display: inline-block;
+    padding-bottom: 32px;
+    text-align: center;
+    vertical-align: top;
+    width: 32%;
+
+    @media #{$small} {
+      width: 49%;
+    }
+
+    .speaker-image {
+      max-width: 100%;
+      border-radius: 1000px;
+      width: 140px;
+
+      @media #{$small} {
+        width: 100px;
+      }
+    }
+
+    .speaker-title {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+#mce-EMAIL {
+  text-align: center;
+  max-width: 320px;
+  width: 80%;
+}
