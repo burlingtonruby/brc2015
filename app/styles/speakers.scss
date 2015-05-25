@@ -12,7 +12,7 @@
       vertical-align: top;
       width: 20%;
 
-      @media (max-width: 640px) {
+      @media #{$small} {
         width: 32%;
       }
 
@@ -54,8 +54,21 @@
   vertical-align: top;
   width: 32%;
 
-  @media (max-width: 640px) {
+  @media #{$small} {
     width: 49%;
+  }
+
+  a {
+    text-decoration: none;
+
+    span {
+      color: $dark;
+      transition: color 0.5s ease;
+
+      &:hover {
+        color: lighten($dark, 30%);
+      }
+    }
   }
 
   .speaker-image {
@@ -63,12 +76,20 @@
     border-radius: 1000px;
     width: 140px;
 
-    @media (max-width: 640px) {
+    @media #{$small} {
       width: 100px;
     }
   }
 
-  .speaker-title {
-    font-size: 1.6rem;
+  .speaker-name {
+    display: block;
+    font-size: 14px;
+  }
+
+  .speaker-talk-title {
+    display: block;
+    font-size: 12px;
+    padding-top: 6px;
+    padding-bottom: 18px;
   }
 }

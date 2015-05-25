@@ -1,88 +1,25 @@
+@import 'variables';
+@import 'media-queries';
+
+@import 'about';
+@import 'header';
+@import 'home';
 @import 'speakers';
 @import 'sponsors';
 
-$dark: #222;
-
-.brc-mark-large {
-  margin-top: 20px;
-  width: 160px;
+body {
+  font-family: 'Open Sans';
 }
 
 .buy-a-ticket {
   margin: 18px 0;
 }
 
-.hero, .header, .footer {
+.hero, .footer {
   text-align: center;
 }
 
-.title {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-
-.hero {
-
-  .hero-info {
-    margin: 60px auto;
-    max-width: 660px;
-  }
-}
-
-.header {
-  a {
-    color: $dark;
-    text-decoration: none;
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: lighten($dark, 30%);
-    }
-  }
-}
-
-.sponsor-prospect {
-  font-size: 12px;
-  padding-top: 24px;
-}
-
-#speakers {
-  margin: 20px 0;
-
-  .speaker {
-    display: inline-block;
-    padding-bottom: 32px;
-    text-align: center;
-    vertical-align: top;
-    width: 32%;
-
-    @media (max-width: 640px) {
-      width: 49%;
-    }
-
-    .speaker-image {
-      max-width: 100%;
-      border-radius: 1000px;
-      width: 140px;
-
-      @media (max-width: 640px) {
-        width: 100px;
-      }
-    }
-
-    .speaker-title {
-      font-size: 1.6rem;
-    }
-  }
-}
-
-.video-embed {
+.constrained-content {
+  margin: 0 auto;
   max-width: 660px;
-  width: 100%;
-}
-
-#mce-EMAIL {
-  text-align: center;
-  max-width: 320px;
-  width: 80%;
 }

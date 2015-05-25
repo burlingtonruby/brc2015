@@ -1,0 +1,79 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  text-align: left;
+  width: 100%;
+
+  a {
+    color: $dark;
+    text-decoration: none;
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: lighten($dark, 30%);
+    }
+  }
+
+  .nav {
+    flex: 2 50%;
+
+    @media #{$small} {
+      flex: 2 100%;
+    }
+
+    ul {
+      margin-top: 26px;
+      display: flex;
+      justify-content: flex-end;
+
+      @media #{$small} {
+        justify-content: center;
+      }
+
+      li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        @media #{$small} {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .title {
+    flex: 1 50%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+    @media #{$small} {
+      flex: 1 100%;
+      justify-content: center;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    a {
+      display: block;
+    }
+
+    span {
+      display: inline-block;
+      font-size: 18px;
+      padding-left: 12px;
+      padding-top: 6px;
+      vertical-align: top;
+
+      @media #{$small} {
+        font-size: 14px;
+        padding-top: 10px;
+      }
+    }
+
+    .brc-mark-large {
+      width: 40px;
+    }
+  }
+}

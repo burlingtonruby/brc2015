@@ -1,7 +1,5 @@
 <section class='hero'>
-  <h4>August 1st &amp; August 2nd</h4>
-
-  <div class='hero-info'>
+  <div class='hero-info constrained-content'>
     <p>The fourth annual gathering of Ruby friends in Burlington,
     Vermont, USA.</p>
 
@@ -33,12 +31,13 @@
       <h2>Speakers</h2>
 
       {{#each speakers as |speaker|}}
-        {{#link-to 'speakers.speaker' speaker}}
-          <div class='speaker'>
+        <div class='speaker'>
+          {{#link-to 'speakers.speaker' speaker}}
             <img {{bind-attr src=speaker.imageUrl}} class='speaker-image'>
-            <h5 class='speaker-title'>{{speaker.name}}</h5>
-          </div>
-        {{/link-to}}
+            <span class='speaker-name'>{{speaker.name}}</span>
+            <span class='speaker-talk-title'><em>{{speaker.talkTitle}}</em></span>
+          {{/link-to}}
+        </div>
       {{/each}}
 
     </div>
@@ -83,14 +82,5 @@
     </div>
     <!--End mc_embed_signup-->
 
-    <hr>
-
-    <h2>Recap From Last Year</h2>
-
-    <iframe src="//player.vimeo.com/video/103949937?title=0&amp;byline=0&amp;portrait=0" class='video-embed' width="660" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-    <hr>
-
-    <a href='https://ti.to/burlington-ruby/2015-burlington-ruby-conference' class='button button-primary buy-a-ticket'>Buy a Ticket</a>
   </div>
 </section>
