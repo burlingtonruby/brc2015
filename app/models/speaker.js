@@ -137,7 +137,7 @@ Speaker.reopenClass({
       company: 'Autodesk',
       imagePath: 'michael-denomy.jpg',
       name: 'Michael Denomy',
-      talkDescription: "Companies make significant efforts and investments to keep employees happy: free lunches, financial incentives, company outings, and training budgets just to name a few. That's all well and good, but what can we do to take ownership of our own happiness?",
+      talkDescription: "Companies make significant efforts and investments to keep employees happy: free lunches, financial incentives, company outings, and training budgets just to name a few. That's all well and good, but what can we do to take ownership of our own happiness?  In this talk, we will discuss how mindfulness and meditation techniques can be used to take ownership in our own happiness and well-being. We will discuss resources and tips to get started with a practice, as well as stumbling blocks you may encounter along the way.",
       talkTitle: 'Breathe In and Out With Me - Owning Your Happiness',
       twitterHandle: 'mdenomy',
       website: 'https://mdenomy.wordpress.com/'
