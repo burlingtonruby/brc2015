@@ -15,7 +15,11 @@ var Speaker = DS.Model.extend({
 
   imageUrl: function() {
     return new SafeString('https://s3.amazonaws.com/burlingtonrubyconference/2015/speakers/'+this.get('imagePath'));
-  }.property('imagePath')
+  }.property('imagePath'),
+
+  twitterUrl: function() {
+    return new SafeString('https://twitter.com/'+this.get('twitterHandle'));
+  }.property('twitterHandle')
 });
 
 Speaker.reopenClass({

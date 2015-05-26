@@ -3,14 +3,14 @@
   flex-flow: row wrap;
 
   .speakers-list {
-    flex: 2 50%;
+    flex: 2 100%;
     text-align: center;
 
     .speaker {
       padding-bottom: 24px;
       text-align: center;
       vertical-align: top;
-      width: 20%;
+      width: 10%;
 
       @media #{$small} {
         width: 32%;
@@ -33,7 +33,7 @@
   }
 
   .speakers-speaker-content {
-    flex: 3 50%;
+    flex: 3 100%;
   }
 
   .title {
@@ -91,5 +91,33 @@
     font-size: 12px;
     padding-top: 6px;
     padding-bottom: 18px;
+  }
+}
+
+.speaker-show {
+  display: flex;
+  flex-flow: row wrap;
+
+  .speaker-detail {
+    flex: 1 48%;
+    padding-right: 12px;
+  }
+
+  .speaker-info {
+    flex: 2 48%;
+    padding-left: 12px;
+  }
+
+  .speaker-name {
+    font-style: italic;
+    font-size: 18px;
+  }
+
+  .talk-description, .speaker-bio {
+    font-size: 14px;
+  }
+
+  .talk-title {
+    font-size: 24px;
   }
 }

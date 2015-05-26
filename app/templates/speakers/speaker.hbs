@@ -1,10 +1,26 @@
-<div>
-  <h3>{{model.talkTitle}}</h3>
-  <p>{{model.talkDescription}}</p>
-</div>
+<div class='speaker-show'>
+  <div class='speaker-detail'>
+    <h3 class='talk-title'>{{model.talkTitle}}</h3>
+    <h4 class='speaker-name'>{{model.name}}</h4>
+    <p class='talk-description'>{{model.talkDescription}}</p>
+  </div>
 
-<div>
-  {{#if model.company}}
-    <span>{{model.company}}</span>
-  {{/if}}
+  <div class='speaker-info'>
+    <h5>About</h5>
+    <p class='speaker-bio'>{{model.bio}}</p>
+
+    <ul>
+      {{#if model.company}}
+        <li>Company: {{model.company}}</li>
+      {{/if}}
+
+      {{#if model.twitterHandle}}
+        <li>Twitter: <a target='_blank' {{bind-attr href=model.twitterUrl}}>@{{model.twitterHandle}}</a></li>
+      {{/if}}
+
+      {{#if model.website}}
+        <li><a target='_blank' {{bind-attr href=model.website}}>Website</a></li>
+      {{/if}}
+    </ul>
+  </div>
 </div>
