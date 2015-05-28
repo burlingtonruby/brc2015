@@ -14,6 +14,12 @@ const SPONSORS = [
     logoPath: new SafeString('/images/sponsors/weblinc.png'),
     name: 'WebLinc',
     website: 'http://www.weblinc.com'
+  },
+  {
+    level: 'small',
+    logoPath: new SafeString('/images/sponsors/parent-co.png'),
+    name: 'Parent Co',
+    website: 'http://parent.co'
   }
 ];
 
