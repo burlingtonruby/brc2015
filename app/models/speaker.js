@@ -67,7 +67,7 @@ Speaker.reopenClass({
       talkDescription: "As Ruby devs, we tend to be strict in our devotion to the “just get your hands dirty and play around with the code” learning style. It’s what I like to think of as natural context learning. It’s being thrown in the deep end and forced to swim to shore. It’s hands-on. It’s incredibly valuable. It works, but it works faster and better if it’s not a stand-alone method. This is a talk about the other methods. It's a talk about the tricks I used to become nearly fluent in Mandarin Chinese, and about how I applied those same tricks to learning Ruby. In a nutshell, it's about the foreignness of programming languages and about the ways we can program our brains to learn a foreign one. I’ve found intrinsic similarities between foreign and programming languages, and with each, I’ve found a simple and straightforward path to fluency.",
       talkTitle: 'Learning Fluency',
       twitterHandle: 'sarambsimon',
-      website: 'http://www.sarambsimon.co'
+      website: 'http://www.sarambsimon.com'
     },
     {
       id: 5,
