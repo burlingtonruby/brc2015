@@ -33,7 +33,7 @@ Speaker.reopenClass({
       talkDescription: 'nil',
       talkTitle: 'TBA',
       twitterHandle: '_zzak',
-      website: 'zzak.io'
+      website: 'http://zzak.io'
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ Speaker.reopenClass({
       talkDescription: 'As developers we are often called upon to teach elements of our craft to others. While we know our subject and our work, we might not know the best ways to share that knowledge with students. In this talk, I’ll discuss how to apply well known themes of software development to the process of education. Reframing our students as customers brings their needs into focus, and defines our mission. Defining desired outcomes explicitly and clearly help us choose appropriate activities. Drawing from a career teaching students to code, I’ll share some successes and failures and leave you with techniques to help you be a more effective and inspiring teacher.',
       talkTitle: 'Agile Teaching',
       twitterHandle: 'marksobkowicz',
-      website: 'www.gameswithcode.com'
+      website: 'http://www.gameswithcode.com'
     },
     {
       id: 3,
