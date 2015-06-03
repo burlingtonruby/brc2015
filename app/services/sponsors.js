@@ -4,6 +4,12 @@ const SafeString = Ember.Handlebars.SafeString;
 
 const SPONSORS = [
   {
+    level: 'large',
+    logoPath: new SafeString('/images/sponsors/stitch-fix.jpg'),
+    name: 'Stitch Fix',
+    website: 'http://technology.stitchfix.com/'
+  },
+  {
     level: 'small',
     logoPath: new SafeString('/images/sponsors/travis-ci.png'),
     name: 'Travis CI',
