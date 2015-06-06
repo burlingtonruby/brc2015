@@ -2,4 +2,9 @@
   <img
     class='sponsor-image'
     {{bind-attr src=sponsor.logoPath alt=sponsor.name}} >
+
 </a>
+
+{{#if sponsor.description}}
+  <p class='sponsor-description'>{{sponsor.description}}</p>
+{{/if}}

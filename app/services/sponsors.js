@@ -4,6 +4,7 @@ const SafeString = Ember.Handlebars.SafeString;
 
 const SPONSORS = [
   {
+    description: 'Stitch Fix is an online personal styling service that is reinventing the retail industry. A Ruby-centric startup creating unique solutions in personal styling, logistics and merchandising.',
     level: 'large',
     logoPath: new SafeString('/images/sponsors/stitch-fix.jpg'),
     name: 'Stitch Fix',
