@@ -164,7 +164,7 @@ Speaker.reopenClass({
       imagePath: 'hiro-asari.jpg',
       name: 'Hiro Asari',
       talkDescription: 'nil',
-      talkTitle: 'TBA',
+      talkTitle: 'Why am I Waiting for a Long Time for the Build to Start?, Or, the First Lessons in Control Theory.',
       twitterHandle: 'hiro_asari',
       website: ''
     }
