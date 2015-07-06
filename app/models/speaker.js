@@ -163,7 +163,7 @@ Speaker.reopenClass({
       company: 'Travis CI',
       imagePath: 'hiro-asari.jpg',
       name: 'Hiro Asari',
-      talkDescription: 'nil',
+      talkDescription: "As Travis CI grew in popularity, a common question users started asking is: 'Why is my build slow to start on Travis CI?'. While the work to improve this experience for our users is an ongoing multi-faceted story, this talk will focus on one aspect of that story: control theory.<br><br>The principal aim of control theory is to systematize methods of controlling systems under consideration. In this context, a 'system' can be simple with a single input and a single output (e.g., a thermostat), or quite complex with multiple inputs and multiple outputs (e.g., a human body).  A 'controller' looks at the signal which the system emits, and applies corrective action to the input to the system so that the desired level of output is produced by the system. The controllers can also be complex, of course, but it can also be surprisingly simple to be an effective controller.<br><br>The theory can be applied in many situations in the world, and Travis CI is no exception. We will discuss what role the theory plays in our process, and how we could improve the overall user experience.",
       talkTitle: 'Why am I Waiting for a Long Time for the Build to Start?, Or, the First Lessons in Control Theory.',
       twitterHandle: 'hiro_asari',
       website: ''
