@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('index', {path: ''});
   this.route('about', {path: 'about'});
   this.route('conduct', {path: 'conduct'});
+  this.route('schedule', {path: 'schedule'});
   this.route('speakers', {path: 'speakers'}, function() {
     this.route('speaker', {path: ':speaker_id'});
   });
