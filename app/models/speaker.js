@@ -9,6 +9,7 @@ var Speaker = DS.Model.extend({
   imagePath: DS.attr('string'),
   name: DS.attr('string'),
   talkDescription: DS.attr('string'),
+  talkTime: DS.attr('string'),
   talkTitle: DS.attr('string'),
   twitterHandle: DS.attr('string'),
   website: DS.attr('string'),
@@ -31,6 +32,7 @@ Speaker.reopenClass({
       imagePath: 'zachary-scott.png',
       name: 'Zachary Scott',
       talkDescription: 'nil',
+      talkTime: '9:00am - 9:30am',
       talkTitle: 'TBA',
       twitterHandle: '_zzak',
       website: 'http://zzak.io'
@@ -42,6 +44,7 @@ Speaker.reopenClass({
       imagePath: 'mark-sobkowicz.jpg',
       name: 'Mark Sobkowicz',
       talkDescription: 'As developers we are often called upon to teach elements of our craft to others. While we know our subject and our work, we might not know the best ways to share that knowledge with students. In this talk, I’ll discuss how to apply well known themes of software development to the process of education. Reframing our students as customers brings their needs into focus, and defines our mission. Defining desired outcomes explicitly and clearly help us choose appropriate activities. Drawing from a career teaching students to code, I’ll share some successes and failures and leave you with techniques to help you be a more effective and inspiring teacher.',
+      talkTime: '10:00am - 10:30am',
       talkTitle: 'Agile Teaching',
       twitterHandle: 'marksobkowicz',
       website: 'http://www.gameswithcode.com'
@@ -53,6 +56,7 @@ Speaker.reopenClass({
       imagePath: 'sam-phippen.jpg',
       name: 'Sam Phippen',
       talkDescription: "Defensive programming is one of those abstract ideas that seems great. We all want to use these ideas to ensure the long-term maintainability of our codebases. It is, however, often unclear what we should be defending against and what form those defenses should take. We can find places where defensive patterns could be added by looking at the edge cases that occur in our system. Where it seems appropriate, we can then apply ideas and patterns from defensive programming.",
+      talkTime: '11:00am - 11:30am',
       talkTitle: 'Extremely Defensive Coding',
       twitterHandle: 'samphippen',
       website: 'http://samphippen.com'
@@ -65,6 +69,7 @@ Speaker.reopenClass({
       imagePath: 'sara-simon.jpg',
       name: 'Sara Simon',
       talkDescription: "As Ruby devs, we tend to be strict in our devotion to the “just get your hands dirty and play around with the code” learning style. It’s what I like to think of as natural context learning. It’s being thrown in the deep end and forced to swim to shore. It’s hands-on. It’s incredibly valuable. It works, but it works faster and better if it’s not a stand-alone method. This is a talk about the other methods. It's a talk about the tricks I used to become nearly fluent in Mandarin Chinese, and about how I applied those same tricks to learning Ruby. In a nutshell, it's about the foreignness of programming languages and about the ways we can program our brains to learn a foreign one. I’ve found intrinsic similarities between foreign and programming languages, and with each, I’ve found a simple and straightforward path to fluency.",
+      talkTime: '2:00pm - 2:30pm',
       talkTitle: 'Learning Fluency',
       twitterHandle: 'sarambsimon',
       website: 'http://www.sarambsimon.com'
@@ -76,6 +81,7 @@ Speaker.reopenClass({
       imagePath: 'aaron-kalin.jpg',
       name: 'Aaron Kalin',
       talkDescription: "Ever been to a website or tried to use an internet service that was suddenly not working? It may have been the victim of a Distributed Denial of Service attack or DDoS as they are called. They happen almost daily in varying shapes and sizes, but you don’t always get the details of how and why. You’ll hear the story of such an attack from someone who was a victim along with detail of how it happened, why it happened, and what they are doing to protect themselves the next time it happens so you can too.",
+      talkTime: '3:00pm - 3:30pm',
       talkTitle: 'Anatomy of a Distributed Denial of Service Attack',
       twitterHandle: 'martinisoft',
       website: 'http://maritnisoftware.com'
@@ -87,6 +93,7 @@ Speaker.reopenClass({
       imagePath: 'sharon-steed.jpg',
       name: 'Sharon Steed',
       talkDescription: "Developers are trained to communicate to things with a goal in mind. When you're talking to something like, say a computer, you type in your code and it responds by giving you back what you want. Nine times out of ten, it works perfectly. Why, then, is it so difficult to do this same thing when talking to a client about a project, updating a superior on your progress, or pitching an investor your million-dollar idea? Because talking to people requires a special set of skills - namely, empathy and a little bit of storytelling. In an industry filled with brilliant minds, great ideas and mass disruption, so few of the best and brightest know how to tell their compelling story. The takeaways from this talk will be learning how to value the listener, improved social connection and becoming a master at building a relationship quickly and effectively.",
+      talkTime: '4:00pm - 4:30pm',
       talkTitle: 'How to Talk to Humans: A Different Approach to Soft Skills',
       twitterHandle: 'sharonsteed',
       website: 'http://sharonsteed.co'
@@ -98,6 +105,7 @@ Speaker.reopenClass({
       imagePath: 'tim-krajcar.jpg',
       name: 'Tim Krajcar',
       talkDescription: "For too long, computers have been shut out of the red-hot music-to-listen-to-while-relaxing-in-the-bathtub genre. Today, that all changes. Our smooth-jazz-as-a-service startup is primed to disrupt this stale industry. In this talk we'll introduce the basic protocols of digital music and take a whirlwind tour of musical harmonic theory. We'll survey some Ruby tools that make noise and we'll dig deep into using Ruby to generate beautiful piano music with audience-selected chords. It will all culminate in a showdown between man and machine to decide the fate of the musical universe as our program battles a real live musician.",
+      talkTime: '4:45pm - 5:15pm',
       talkTitle: 'kenny_g.rb: Making Ruby Write Smooth Jazz',
       twitterHandle: 'TimKrajcar',
       website: 'http://www.timbabwe.com'
@@ -109,6 +117,7 @@ Speaker.reopenClass({
       imagePath: 'mark-bates.jpg',
       name: 'Mark Bates',
       talkDescription: 'Distraction Driven Development is a fun approach to problem solving that might just change your life, or at the very least provide some good arguments as to why you should spend all day playing Clash of Clans.',
+      talkTime: '9:00am - 9:30am',
       talkTitle: 'Distraction Driven Development',
       twitterHandle: 'markbates',
       website: 'http://www.markbates.com'
@@ -120,6 +129,7 @@ Speaker.reopenClass({
       imagePath: 'stephanie-morillo.jpg',
       name: 'Stephanie Morillo',
       talkDescription: 'In this talk, I will share the experiences and challenges I faced as a woman of color learning, and then teaching others, how to code. I will also discuss ways the industry can be more welcoming to marginalized people, offer examples of ways that people can support diversity while making an impact, and explore how we can offer bridges into technical careers for people with varied skill sets and levels of coding aptitude.',
+      talkTime: '10:00am - 10:30am',
       talkTitle: 'The Importance Of Being Earnest...About Breaking Into Tech',
       twitterHandle: 'radiomorillo',
       website: 'http://rubymorillo.github.io'
@@ -131,6 +141,7 @@ Speaker.reopenClass({
       imagePath: 'aaron-quint.jpg',
       name: 'Aaron Quint',
       talkDescription: "Regardless of where you stand on the debate between monoliths and microservices, the fact is that its never really one or the other. As your applications grow they often need to start communicating with other applications and services. Because we're often building for the web, we usually think of web protocols first (HTTP/JSON) when designing communication, but this might not be the best option for high throughput, high availability services.",
+      talkTime: '11:00am - 11:30am',
       talkTitle: 'Beyond JSON: Improving Inter-app Communication',
       twitterHandle: 'aq',
       website: 'http://www.quirkey.com'
@@ -142,6 +153,7 @@ Speaker.reopenClass({
       imagePath: 'michael-denomy.jpg',
       name: 'Michael Denomy',
       talkDescription: "Companies make significant efforts and investments to keep employees happy: free lunches, financial incentives, company outings, and training budgets just to name a few. That's all well and good, but what can we do to take ownership of our own happiness?  In this talk, we will discuss how mindfulness and meditation techniques can be used to take ownership in our own happiness and well-being. We will discuss resources and tips to get started with a practice, as well as stumbling blocks you may encounter along the way.",
+      talkTime: '2:00pm - 2:30pm',
       talkTitle: 'Breathe In and Out With Me - Owning Your Happiness',
       twitterHandle: 'mdenomy',
       website: 'https://mdenomy.wordpress.com/'
@@ -153,6 +165,7 @@ Speaker.reopenClass({
       imagePath: 'eileen-m-uchitelle.jpg',
       name: 'Eileen M. Uchitelle',
       talkDescription: "Understanding performance output can feel like reading tea leaves. It makes sense to a few people, but many of us are left in the dark; overwhelmed and frustrated by the data. On top of that there are a ton of performance tools to choose from; StackProf, RubyProf, AllocationTracer. Where do you even start?<br><br>While working on speeding up integration tests in Rails source, I learned that the key to improving performance of Ruby code is having a baseline, not relying on one profiler and understanding the advantages and limitations of your tools. By utilizing these methods integration test are now 3 times faster than they were in Rails 4.2.0, with more improvements being made every day.<br><br>In this talk we will not only look at how to read performance output, but when and how to use the right profilers for the job. We'll discuss a variety of methods and techniques for benchmarking and profiling so you can get the most out of each performance tool.",
+      talkTime: '3:00pm - 3:30pm',
       talkTitle: 'How to Performance',
       twitterHandle: 'eileencodes',
       website: 'http://eileencodes.com'
@@ -163,7 +176,8 @@ Speaker.reopenClass({
       company: 'Travis CI',
       imagePath: 'hiro-asari.jpg',
       name: 'Hiro Asari',
-      talkDescription: "As Travis CI grew in popularity, a common question users started asking is: 'Why is my build slow to start on Travis CI?'. While the work to improve this experience for our users is an ongoing multi-faceted story, this talk will focus on one aspect of that story: control theory.<br><br>The principal aim of control theory is to systematize methods of controlling systems under consideration. In this context, a 'system' can be simple with a single input and a single output (e.g., a thermostat), or quite complex with multiple inputs and multiple outputs (e.g., a human body).  A 'controller' looks at the signal which the system emits, and applies corrective action to the input to the system so that the desired level of output is produced by the system. The controllers can also be complex, of course, but it can also be surprisingly simple to be an effective controller.<br><br>The theory can be applied in many situations in the world, and Travis CI is no exception. We will discuss what role the theory plays in our process, and how we could improve the overall user experience.",
+      talkDescription: "As Travis CI grew in popularity, a common question users started asking is: 'Why is my build slow to start on Travis CI?'. While the work to improve this experience for our users is an ongoing multi-faceted story, this talk will focus on one aspect of that story: control theory.<br><br>The principal aim of control theory is to systematize methods of controlling systems under consideration. In this context, a 'system' can be simple with a single input and a single output (e.g., a thermostat), or quite complex with multiple inputs and multiple outputs (e.g., a human body). A 'controller' looks at the signal which the system emits, and applies corrective action to the input to the system so that the desired level of output is produced by the system. The controllers can also be complex, of course, but it can also be surprisingly simple to be an effective controller.<br><br>The theory can be applied in many situations in the world, and Travis CI is no exception. We will discuss what role the theory plays in our process, and how we could improve the overall user experience.",
+      talkTime: '3:45pm - 4:15pm',
       talkTitle: 'Why am I Waiting for a Long Time for the Build to Start?, Or, the First Lessons in Control Theory.',
       twitterHandle: 'hiro_asari',
       website: ''

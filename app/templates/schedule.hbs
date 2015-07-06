@@ -1,0 +1,138 @@
+<div id="schedule">
+  <h2>Schedule</h2>
+
+  <p>The conference takes place at the Main Street Landing Performing Arts Center's Film House at <a href="http://maps.google.com/maps?q=Main+Street+Landing+Performing+Arts+Center%2C+60+Lake+St%0D%0ABurlington%2C+VT+05401">60 Lake St. Burlington, VT 05401</a>.</p>
+
+  <p>All attendee tickets include an invitation to the Friday evening social gathering.</p>
+
+  <h3>Friday - July 31st</h3>
+
+  <table class='pure-table pure-table-horizontal'>
+    <thead>
+      <tr>
+        <th class='table-time'>Time</th>
+        <th class='table-name'>Event</th>
+        <th class='table-details'>Info</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5:00pm - 7:00pm</td>
+        <td>Social gathering at <a href='http://hotelvt.com/'>Juniper at Hotel VT</a></td>
+        <td>Come enjoy food and drinks in downtown Burlington with the rest of the attendees. The venue is located at <a href='https://www.google.com/maps/place/Juniper+Bar+and+Restaurant/@44.4785921,-73.2173632,17z/data=!3m1!4b1!4m2!3m1!1s0x4cca7af0e26213fb:0x3370a34e6ec5dbc0'>41 Cherry St</a>. There are a few parking optons including the city parking garage (next door to the location) and street parking.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Saturday - August 1st</h3>
+
+  <table class='pure-table pure-table-horizontal'>
+    <thead>
+      <tr>
+        <th class='table-time'>Time</th>
+        <th class='table-name'>Speaker</th>
+        <th class='table-details'>Talk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8:00am - 8:45am</td>
+        <td>Breakfast &amp; Check-in</td>
+        <td>Light breakfast and pick-up your badge</td>
+      </tr>
+      <tr>
+        <td>8:45am - 9:00am</td>
+        <td>Conference Organizers</td>
+        <td>Introduction</td>
+      </tr>
+
+      {{#each saturdayMorning as |speaker|}}
+        <tr>
+          <td>{{speaker.talkTime}}</td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.name}}{{/link-to}}
+          </td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.talkTitle}}{{/link-to}}
+          </td>
+        </tr>
+      {{/each}}
+
+      <tr>
+        <td>11:30am - 2:00pm</td>
+        <td>Lunch</td>
+        <td>Enjoy lunch in Burlington</td>
+      </tr>
+
+      {{#each saturdayAfternoon as |speaker|}}
+        <tr>
+          <td>{{speaker.talkTime}}</td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.name}}{{/link-to}}
+          </td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.talkTitle}}{{/link-to}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <h3>Sunday - August 2nd</h3>
+  <table class='pure-table pure-table-horizontal'>
+    <thead>
+      <tr>
+        <th class='table-time'>Time</th>
+        <th class='table-name'>Speaker</th>
+        <th class='table-details'>Talk</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>8:30am - 9:00am</td>
+        <td>Breakfast</td>
+        <td>Wake up with light breakfast and networking</td>
+      </tr>
+
+      {{#each sundayMorning as |speaker|}}
+        <tr>
+          <td>{{speaker.talkTime}}</td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.name}}{{/link-to}}
+          </td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.talkTitle}}{{/link-to}}
+          </td>
+        </tr>
+      {{/each}}
+
+      <tr>
+        <td>11:30am - 2:00pm</td>
+        <td>Lunch</td>
+        <td>Enjoy lunch in Burlington</td>
+      </tr>
+
+      {{#each sundayAfternoon as |speaker|}}
+        <tr>
+          <td>{{speaker.talkTime}}</td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.name}}{{/link-to}}
+          </td>
+
+          <td>
+            {{#link-to 'speakers.speaker' speaker}}{{speaker.talkTitle}}{{/link-to}}
+          </td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+
+  <p>There is a half hour between each talk, so feel free to stretch out, get some fresh air and chat with folks. The allotted time for lunch should be lengthy enough to enjoy a meal at one of the many resturaunts downtown. Breakfast &amp; coffee are provided in the morning. Lunch is not provided.</p>
+</div>

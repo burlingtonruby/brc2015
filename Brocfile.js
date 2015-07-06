@@ -19,5 +19,6 @@ var app = new EmberApp();
 
 app.import('bower_components/skeleton/css/normalize.css');
 app.import('bower_components/skeleton/css/skeleton.css');
+app.import('bower_components/pure/tables.css');
 
 module.exports = app.toTree();
