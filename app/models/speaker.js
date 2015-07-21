@@ -116,9 +116,9 @@ Speaker.reopenClass({
       company: 'Meta42 Labs',
       imagePath: 'mark-bates.jpg',
       name: 'Mark Bates',
-      talkDescription: 'Distraction Driven Development is a fun approach to problem solving that might just change your life, or at the very least provide some good arguments as to why you should spend all day playing Clash of Clans.',
+      talkDescription: 'Alan Turing, Ada Lovelace, Mark Zuckerberg, Steve Wozniak. These are all people who’ve never been in my kitchen. I’ve never had even a passing head nod with whilst coming out of the bathroom. What size shoes do they wear? What’s their favorite color? Do they know all the lyrics to Katy Perry’s Roar? I don’t know. But perhaps by taking a look at our collective past we can find these answers, and maybe learn a little bit about our future. Or at the very least we’ll get to see pictures of really big computers from the olden days!',
       talkTime: '9:00am - 9:30am',
-      talkTitle: 'Distraction Driven Development',
+      talkTitle: 'A History of Programming and Other Such Ridiculous Things',
       twitterHandle: 'markbates',
       website: 'http://www.markbates.com'
     },
