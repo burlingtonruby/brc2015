@@ -27,6 +27,12 @@ const SPONSORS = [
     logoPath: new SafeString('/images/sponsors/parent-co.png'),
     name: 'Parent Co',
     website: 'http://parent.co'
+  },
+  {
+    level: 'small',
+    logoPath: new SafeString('/images/sponsors/digitalocean.png'),
+    name: 'DigitalOcean',
+    website: 'https://www.digitalocean.com/'
   }
 ];
 
