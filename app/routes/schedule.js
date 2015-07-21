@@ -3,7 +3,7 @@ import ResetScroll from '../mixins/reset-scroll';
 
 export default Ember.Route.extend(ResetScroll, {
   setupController: function(controller) {
-    var speakers = this.store.find('speaker').then(function(speakers) {
+    this.store.find('speaker').then(function(speakers) {
       var saturdayMorning = speakers.slice(0, 3);
       var saturdayAfternoon = speakers.slice(3, 7);
       var sundayMorning = speakers.slice(7, 10);
