@@ -30,6 +30,12 @@ const SPONSORS = [
   },
   {
     level: 'small',
+    logoPath: new SafeString('/images/sponsors/drugdev.png'),
+    name: 'DrugDev',
+    website: 'http://www.drugdev.com/'
+  },
+  {
+    level: 'small',
     logoPath: new SafeString('/images/sponsors/digitalocean.png'),
     name: 'DigitalOcean',
     website: 'https://www.digitalocean.com/'
