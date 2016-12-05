@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'brc2015',
     environment: environment,
-    baseURL: '/',
+    baseURL: '/burlingtonrubyconference2015',
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
