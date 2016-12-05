@@ -6,37 +6,37 @@ const SPONSORS = [
   {
     description: 'Stitch Fix is an online personal styling service that is reinventing the retail industry. A Ruby-centric startup creating unique solutions in personal styling, logistics and merchandising.',
     level: 'large',
-    logoPath: new SafeString('/images/sponsors/stitch-fix.jpg'),
+    logoPath: new SafeString('images/sponsors/stitch-fix.jpg'),
     name: 'Stitch Fix',
     website: 'http://technology.stitchfix.com/'
   },
   {
     level: 'small',
-    logoPath: new SafeString('/images/sponsors/travis-ci.png'),
+    logoPath: new SafeString('images/sponsors/travis-ci.png'),
     name: 'Travis CI',
     website: 'https://travis-ci.com'
   },
   {
     level: 'small',
-    logoPath: new SafeString('/images/sponsors/weblinc.png'),
+    logoPath: new SafeString('images/sponsors/weblinc.png'),
     name: 'WebLinc',
     website: 'http://www.weblinc.com'
   },
   {
     level: 'small',
-    logoPath: new SafeString('/images/sponsors/parent-co.png'),
+    logoPath: new SafeString('images/sponsors/parent-co.png'),
     name: 'Parent Co',
     website: 'http://parent.co'
   },
   {
     level: 'small',
-    logoPath: new SafeString('/images/sponsors/drugdev.png'),
+    logoPath: new SafeString('images/sponsors/drugdev.png'),
     name: 'DrugDev',
     website: 'http://www.drugdev.com/'
   },
   {
     level: 'small',
-    logoPath: new SafeString('/images/sponsors/digitalocean.png'),
+    logoPath: new SafeString('images/sponsors/digitalocean.png'),
     name: 'DigitalOcean',
     website: 'https://www.digitalocean.com/'
   }

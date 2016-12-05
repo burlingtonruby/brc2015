@@ -5,7 +5,7 @@ module.exports = function(environment) {
     modulePrefix: 'brc2015',
     environment: environment,
     baseURL: '/burlingtonrubyconference2015',
-    locationType: 'auto',
+    locationType: 'hash',
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
